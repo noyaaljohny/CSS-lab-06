@@ -1,0 +1,157 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+	<title>Specifying Color with RGBa, HSLa, Hexadecimal, and CSS Filters</title>
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/base.css" rel="stylesheet">
+	<style>
+/* STEP 1: Using the color picker utility at
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool,
+set each color in hexadecimal format
+to match as closely as you can with the colors
+on the paint swatch card provided.
+-------------------------------------------------- */
+		#hex div:nth-of-type(1) {
+				background-color: red;
+		}
+		#hex div:nth-of-type(2) {
+				background-color: orange;
+		}
+		#hex div:nth-of-type(3) {
+				background-color: yellow;
+		}
+		#hex div:nth-of-type(4) {
+				background-color: limegreen;
+		}
+		#hex div:nth-of-type(5) {
+				background-color: lightblue;
+		}
+		#hex div:nth-of-type(6) {
+				background-color: magenta;
+		}
+/* STEP 2: Set each color in rgba format
+to match as closely as you can with the colors
+on the paint swatch card provided.
+-------------------------------------------------- */
+		#rgba div:nth-of-type(1) {
+				background-color: red;
+		}
+/* STEP 3: Set each color in hsla format
+to match as closely as you can with the colors
+on the paint swatch card provided - but the
+background pattern must be visible.
+-------------------------------------------------- */
+		#hsla div:nth-of-type(1) {
+				background-color: red;
+		}
+/* STEP 4: Set each color using a CSS color keywords
+(https://developer.mozilla.org/en-US/docs/Web/CSS/color_value)
+that matches each color as closely as possible, then
+apply one or more CSS filters to see if you can
+produce an exact rendition of the swatch color
+(https://developer.mozilla.org/en-US/docs/Web/CSS/filter).
+-------------------------------------------------- */
+		#opacity div:nth-of-type(1) {
+				background-color: cyan;
+				/* Example below transforms cyan to red… */
+				filter: hue-rotate(180deg) saturate(500%);
+		}
+	</style>
+</head>
+
+<body>
+	<header>
+		<h1>Specifying Color <em>with</em> <abbr title="Red, Green, Blue, Alpha">RGBa</abbr>, <abbr title="Hue, Saturation, Luminousity, Alpha">HSLa</abbr>, Hexadecimal, <em>and</em> CSS Filters</h1>
+	</header>
+	<main>
+		<section id="hex">
+			<h2>Hexadecimal</h2>
+			<div class="red">
+				<h3>Red</h3>
+			</div>
+			<div class="green">
+				<h3>Green</h3>
+			</div>
+			<div class="blue">
+				<h3>Blue</h3>
+			</div>
+			<div class="yellow">
+				<h3>Yellow</h3>
+			</div>
+			<div class="purple">
+				<h3>Purple</h3>
+			</div>
+			<div class="teal">
+				<h3>Teal</h3>
+			</div>
+		</section>
+		<section id="rgba">
+			<h2>RGB(A)</h2>
+			<div class="red">
+				<h3>Red</h3>
+			</div>
+			<div class="green">
+				<h3>Green</h3>
+			</div>
+			<div class="blue">
+				<h3>Blue</h3>
+			</div>
+			<div class="yellow">
+				<h3>Yellow</h3>
+			</div>
+			<div class="purple">
+				<h3>Purple</h3>
+			</div>
+			<div class="teal">
+				<h3>Teal</h3>
+			</div>
+		</section>
+		<section id="hsla">
+			<h2>HSL(A)</h2>
+			<div>
+				<h3>Red</h3>
+			</div>
+			<div>
+				<h3>Yellow</h3>
+			</div>
+			<div>
+				<h3>Green</h3>
+			</div>
+			<div>
+				<h3>Cyan</h3>
+			</div>
+			<div>
+				<h3>Blue</h3>
+			</div>
+			<div>
+				<h3>Magenta</h3>
+			</div>
+		</section>
+		<section id="opacity">
+			<h2>Keyword/Filter</h2>
+			<div style="background-color: cornflowerblue; filter: brightness(75%);">
+				<h3>Cornflower Blue</h3>
+			</div>
+			<div style="background-color: mediumorchid; filter: grayscale(50%);">
+				<h3>Medium Orchid</h3>
+			</div>
+			<div style="background-color: darkolivegreen; filter: hue-rotate(90deg);">
+				<h3>Dark Olive Green</h3>
+			</div>
+			<div style="background-color: steelblue; filter: invert(100%);">
+				<h3>Steel Blue</h3>
+			</div>
+			<div style="background-color: salmon; filter: sepia(50%);">
+				<h3>Salmon</h3>
+			</div>
+			<div style="background-color: teal; filter: saturate(200%);">
+				<h3>Teal</h3>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p><small>Colors based on CIL color paint swatch cards</small></p>
+	</footer>
+</body>
+</html>

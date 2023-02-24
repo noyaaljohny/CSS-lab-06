@@ -1,0 +1,163 @@
+/* Base styles for Lab 7
+-------------------------------------------------- */
+body {
+	background-color: rgb(240,240,240);
+}
+header {
+	padding: 1em;
+}
+main {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+main section {
+	width: 20%;
+	padding: 0.5em;
+	background-color: rgb(255,255,255);
+	box-shadow: 0px 7px 15px 5px rgba(0,0,0,0.1); 
+}
+main section h2 {
+	margin: 0;
+}
+main section h3 {
+	margin: 0;
+	font-size: 75%;
+}
+main section div {
+	margin-top: 0.5em;
+	padding: 0.5em;
+	color: rgb(255,255,255);
+	background-color: grey;
+	height: 3em;
+}
+.red {
+    background-color: #FF0000;
+}
+
+.green {
+    background-color: #00FF00;
+}
+
+.blue {
+    background-color: #0000FF;
+}
+
+.yellow {
+    background-color: #FFFF00;
+}
+
+.purple {
+    background-color: #800080;
+}
+
+.teal {
+    background-color: #008080;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    display: inline-block;
+    margin: 10px;
+}
+.red {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.green {
+    background-color: rgba(0, 255, 0, 0.5);
+}
+
+.blue {
+    background-color: rgba(0, 0, 255, 0.5);
+}
+
+.yellow {
+    background-color: rgba(255, 255, 0, 0.5);
+}
+
+.purple {
+    background-color: rgba(128, 0, 128, 0.5);
+}
+
+.teal {
+    background-color: rgba(0, 128, 128, 0.5);
+}
+#hsla div:nth-of-type(1) {
+	background-color: hsla(0, 100%, 50%, 0.5);
+}
+
+#hsla div:nth-of-type(2) {
+	background-color: hsla(60, 100%, 50%, 0.5);
+}
+main section:nth-of-type(3) {
+	background-color: gainsboro;
+	background-image: 
+		radial-gradient(circle at 100% 150%, hsla(0, 0%, 85%, 0.7) 24%, transparent 25%, transparent 28%, hsla(0, 0%, 85%, 0.7) 29%, hsla(0, 0%, 85%, 0.7) 36%, transparent 36%, transparent 40%, transparent),
+		radial-gradient(circle at 0 150%, hsla(0, 0%, 85%, 0.7) 24%, transparent 25%, transparent 28%, hsla(0, 0%, 85%, 0.7) 29%, hsla(0, 0%, 85%, 0.7) 36%, transparent 36%, transparent 40%, transparent),
+		radial-gradient(circle at 50% 100%, hsla(0, 0%, 100%, 0.7) 10%, transparent 11%, transparent 23%, hsla(0, 0%, 85%, 0.7) 24%, hsla(0, 0%, 85%, 0.7) 30%, transparent 31%, transparent 43%, hsla(0, 0%, 85%, 0.7)),
+		radial-gradient(circle at 100% 50%, hsla(0, 0%, 100%, 0.7) 5%, transparent 6%, transparent 15%, hsla(0, 0%, 85%, 0.7) 16%, hsla(0, 0%, 85%, 0.7) 20%, transparent 21%, transparent 30%, hsla(0, 0%, 85%, 0.7) 31%, hsla(0, 0%, 85%, 0.7) 35%, transparent 36%, transparent 45%, hsla(0, 0%, 85%, 0.7) 46%, hsla(0, 0%, 85%, 0.7) 49%, transparent 50%, transparent),
+		radial-gradient(circle at 0 50%, hsla(0, 0%, 100%, 0.7) 5%, transparent 6%, transparent 15%, hsla(0, 0%, 85%, 0.7) 16%, hsla(0, 0%, 85%, 0.7) 20%, transparent 21%, transparent 30%, hsla(0, 0%, 85%, 0.7) 31%, hsla(0, 0%, 85%, 0.7) 35%, transparent 36%, transparent 45%, hsla(0, 0%, 85%, 0.7) 46%, hsla(0, 0%, 85%, 0.7) 49%, transparent 50%, transparent);
+	background-size: 100px 50px;
+}
+#hsla div:nth-of-type(4) {
+	background-color: hsla(180, 100%, 50%, 0.5);
+}
+
+#hsla div:nth-of-type(5) {
+	background-color: hsla(240, 100%, 50%, 0.5);
+}
+
+#hsla div:nth-of-type(6) {
+	background-color: hsla(300, 100%, 50%, 0.5);
+}
+.red {
+    background-color: rgba(255, 0, 0, 0.5); /* fallback for older browsers */
+    background-color: #FF0000; /* fallback for newer browsers */
+}
+
+.green {
+    background-color: rgba(0, 255, 0, 0.5); /* fallback for older browsers */
+    background-color: #00FF00; /* fallback for newer browsers */
+}
+
+.blue {
+    background-color: rgba(0, 0, 255, 0.5); /* fallback for older browsers */
+    background-color: #0000FF; /* fallback for newer browsers */
+}
+
+.yellow {
+    background-color: rgba(255, 255, 0, 0.5); /* fallback for older browsers */
+    background-color: #FFFF00; /* fallback for newer browsers */
+}
+
+.purple {
+    background-color: rgba(128, 0, 128, 0.5); /* fallback for older browsers */
+    background-color: #800080; /* fallback for newer browsers */
+}
+
+.teal {
+    background-color: rgba(0, 128, 128, 0.5); /* fallback for older browsers */
+    background-color: #008080; /* fallback for newer browsers */
+}
+
+#hsla div:nth-of-type(1) {
+	background-color: hsla(0, 100%, 50%, 0.5); /* fallback for older browsers */
+	background-color: #FF0000; /* fallback for newer browsers */
+}
+
+#hsla div:nth-of-type(2) {
+	background-color: hsla(60, 100%, 50%, 0.5); /* fallback for older browsers */
+	background-color: #00FF00; /* fallback for newer browsers */
+}
+#opacity {
+	background-color: lightpink;
+	filter: brightness(1.2);
+  }
+  
+footer {
+	padding: 1em;
+}
